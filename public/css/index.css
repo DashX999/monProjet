@@ -1,0 +1,443 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* font-family: "Poppins", sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/*   font-family: "Open Sans", sans-serif; */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+body{
+    font-family: "Poppins", sans-serif;
+    background-color: #f5f3f396;
+}
+
+
+/* Mise en forme de mon logo */
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    position: sticky;
+    top: 0;
+    left: 0;
+    box-shadow: 2px 2px 10px gray;
+    z-index: 100;
+}
+
+
+header img{
+    width: 300px;
+    height: 80px;
+    object-fit: cover;
+}
+
+
+/* Le monde qui tourne */
+
+
+.d1{
+    margin: 10px 20px;
+    height: 47vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.d1 .world{
+    width: 200px;
+    height: 200px;
+    box-shadow: 0 0 50px aquamarine,
+    inset 0 0 50px aquamarine;
+    border: 1px solid aquamarine;
+    background-image: url('../img/world-img/world.jpg');
+    background-size: cover;
+    border-radius: 50%;
+    position: relative;
+    animation: move 15s linear infinite;
+}
+
+
+@keyframes turn {
+    0%{
+        width: 200px;
+        height: 200px;
+        opacity: 1;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        width: 300px;
+        height: 300px;
+    }
+}
+
+
+.d1 .world span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+    border: 1px solid aquamarine;
+    border-radius: 50%;
+    animation: turn 6s linear infinite;
+    animation-delay: calc(var(--i) * -1s);
+}
+
+
+@keyframes move {
+    0%{
+        background-position-x: 0px;
+    }
+    100%{
+        background-position-x: 360px;
+    }
+}
+
+
+/* Phrase d'Accroche */
+
+.d2{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.d2 h2{
+    color: gold;
+    font-size: 30px;
+    text-align: center;
+}
+
+
+.d2 h1 span{
+    color: red;
+    text-align: center;
+}
+
+
+.d2 p{
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin: 10px;
+    color: gray;
+}
+
+
+/* Création du button sous forme de vague */
+
+.d3{
+    height: 8vh;
+    margin: 5px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+
+.d3 .wave{
+    border-radius: 2rem;
+    background-color: #e0e0e0;
+    box-shadow: 20px 20px 60px #bebebe,
+    -20px -20px 60px #fff;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: "Open Sans", sans-serif;
+    padding: 10px 25px;
+    cursor: pointer;
+    color: #333;
+    margin: 2rem;
+    position: relative;
+}
+
+
+.d3 
+.wave::before,
+.wave::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: inherit;
+    border-color: inherit;
+    box-shadow: 2px 2px 6px #f5f3f396,
+    -2px -2px 6px #fff,
+    inset 2px 2px 6px #f5f3f396,
+    inset -2px -2px 6px #fff;
+    border-radius: 2rem;
+    animation: wave 2s linear infinite;
+    opacity: 0;
+}
+
+
+.wave::after{
+    animation-delay: 0.8s;
+}
+
+
+@keyframes wave {
+    0%{
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+    }
+    50%{
+        height: 140%;
+        width: 120%;
+        opacity: 1;
+    }
+    100%{
+        width: 130%;
+        height: 180%;
+    }
+}
+
+
+/* En savoir plus */
+
+
+.about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #e3fdfd;
+    width: 70%;
+    margin: 40px 15% 2px;
+    border-radius: 20px;
+}
+
+
+.about h2{
+    text-align: center;
+    padding: 10px;
+    margin: 20px 0 0;
+}
+
+
+.about .tout{
+    border: 2px solid gray;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+
+.about .tout a{
+    background-color: inherit;
+}
+
+
+/* Partie 2 */
+
+.s1{
+    margin: 20px 30px 50px;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+/* Niveau d'apprentissage */
+
+
+.s1 .choose{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    margin: 30px;
+}
+
+
+.s1 .box{
+    background-color: white;
+    width: 20%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 4px solid #f5f3f396;
+    transition: 0.3s;
+    box-shadow: 5px 5px 10px gray,
+    -5px -5px 10px white;
+}
+
+
+/* Taille Génerale des icons */
+
+
+.s1 .box .box-icon{
+    font-size: 50px;
+    width: 100%;
+}
+
+/* Couleurs des icons */
+
+
+.s1 .choose1 .box-icon{
+    color: #22C32A;
+}
+
+
+.s1 .choose2 .box-icon{
+    color: rgb(241, 219, 20);
+}
+
+
+.s1 .choose3 .box-icon{
+    color: blue;
+}
+
+
+.s1 .choose4 .box-icon{
+    color: coral;
+}
+
+
+/* Couleur des titres */
+
+
+.s1 .choose1{
+    color: #22C32A;
+}
+
+
+.s1 .choose2{
+    color: rgb(241, 219, 20);
+}
+
+
+.s1 .choose3{
+    color: blue;
+}
+
+
+.s1 .choose4{
+    color: coral;
+}
+
+
+/* Action Au click */
+
+
+.s1 .choose1:active{
+    border-color: #22C32A;
+}
+
+
+.s1 .choose2:active{
+    border-color: rgb(241, 219, 20);
+}
+
+
+.s1 .choose3:active{
+    border-color: blue;
+}
+
+
+.s1 .choose4:active{
+    border-color: coral;
+}
+
+
+
+
+/* Footer */
+
+
+footer{
+    border-top: 2px solid rgba(128, 128, 128, 0.301);
+    padding: 20px;
+    text-align: center;
+    margin: 5px;
+}
+
+
+footer p{
+    color: gray;
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+
+
+/* ############################################################################## */
+
+
+/* Les Médias Queries */
+
+
+@media screen and (max-width: 800px) {
+
+    .s1 .choose{
+        margin: 1px;
+    }
+
+    .s1 .box{
+        width: 45%;
+        margin-top: 10px;
+    }
+
+    footer{
+        padding: 10px;
+    }
+
+}
+
+
+@media screen and (max-width: 640px) {
+    
+    .about{
+        width: 90%;
+        margin: 40px 5% 2px;
+    }
+    
+    
+    .about h2{
+        text-align: center;
+        padding: 0;
+        margin: 10px;
+    }
+
+
+    footer{
+        border-top: 2px solid rgba(128, 128, 128, 0.158);
+    }
+    
+    
+    footer p{
+        font-size: 20px;
+    }
+    
+}

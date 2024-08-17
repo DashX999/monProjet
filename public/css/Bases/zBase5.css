@@ -1,0 +1,221 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
+/* font-family: "Acme", sans-serif; */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+body{
+    background-color: whitesmoke;
+}
+
+
+/* Contenue Cours */
+
+
+.content-cours{
+    display: block;
+}
+
+
+h1{
+    margin: 20px;
+    font-family: "Acme", sans-serif;
+    text-align: center;
+}
+
+
+h1 span{
+    color: red;
+}
+
+
+/* Les voyelles Cours */
+
+
+.Cours-Voyelles{
+    margin: 20px;
+}
+
+
+.Cours-Voyelles video{
+    width: 90%;
+    height: auto;
+    margin: 10px 5%;
+}
+
+
+/* Creation du bouton GO Exercice */
+
+
+.diva1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.go-exercice{
+    width: 200px;
+    padding: 15px 25px;
+    margin: 20px auto;
+    text-transform: uppercase;
+    border-radius: 15px;
+    background-color: blue;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: "Acme", sans-serif;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+
+.go-exercice:active{
+    background-color: inherit;
+    color: blue;
+}
+
+
+/* Contenue Go Exercice */
+
+
+.content-go-exercice{
+    display: none;
+}
+
+
+.content-go-exercice h1{
+    text-transform: uppercase;
+    color: red;
+    margin: 20px;
+}
+
+
+.content-go-exercice p{
+    color: gray;
+    font-size: 25px;
+    text-align: center;
+    margin: 10px 20px;
+}
+
+
+.content-go-exercice .text{
+    background-color: white;
+    box-shadow: 10px 10px 10px rgba(128, 128, 128, 0.342),
+    -10px -10px 10px rgba(128, 128, 128, 0.342);
+    padding: 20px;
+    width: 80;
+    height: auto;
+    margin: 30px 10%;
+    border-radius: 20px;
+}
+
+
+.content-go-exercice .text p{
+    text-align: justify;
+    color: black;
+}
+
+
+.text .touch{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+
+.text .touch .touch-bar{
+    padding: 10px 25px;
+    border-radius: 20px;
+    font-weight: bold;
+    margin: 15px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+
+.text .touch .play{
+    background-color: blue;
+    color: white;
+}
+
+
+.text .touch .stop{
+    background-color: rgba(128, 128, 128, 0.498);
+    color: red;
+}
+
+
+.text audio{
+    display: none;
+}
+
+
+.text .opp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Creation des Boutons */
+
+
+.choix{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 20px;
+}
+
+
+.content-go-exercice .opp{
+    border-radius: 5px;
+    font-weight: bold;
+    width: 150px;
+    padding: 10px 25px;
+    margin: 15px;
+    background-color: inherit;
+    transition: 0.3s;
+    text-align: center;
+}
+
+
+
+.content-go-exercice .replay{
+    border: 3px solid red;
+    cursor: pointer;
+    
+}
+
+
+.content-go-exercice .replay:active{
+    background-color: red;
+    color: white;    
+}
+
+
+.content-go-exercice .close-day{
+    border: 3px solid blue;
+    cursor: pointer;
+}
+
+
+.content-go-exercice .close-day:active{
+    background-color: blue;
+    color: white;
+}

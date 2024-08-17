@@ -1,0 +1,619 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*    font-family: "Roboto Condensed", sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap');
+
+/*    font-family: "New Amsterdam", sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Moderustic:wght@300..800&display=swap');
+
+/*   font-family: "Moderustic", sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Moderustic:wght@300..800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+/*   font-family: "Ubuntu", sans-serif; */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+body{
+    background-color: #f5f3f396;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+/* Contenue Bases Payement */
+
+
+.container-pay-payBases{
+    border-top: 50px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+    min-height: 100vh;
+}
+
+
+.container-pay-payBases .d1{
+    width: 40%;
+    height: auto;
+    margin: 0 15%;
+    display: block;
+}
+
+
+.d1 .accroche{
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: gray;
+}
+
+
+.d1 .accroche span:nth-child(1){
+    font-size: 35px;
+    font-weight: bold;
+    color: rgb(102, 255, 0);
+}
+
+
+.d1 .accroche span:nth-child(2){
+    font-size: 35px;
+    font-weight: bold;
+    color: red;
+}
+
+
+.d1 .accroche span:nth-child(3){
+    font-weight: bold;
+    border-bottom: 6px double red;
+}
+
+
+.d1 .voir-plus{
+    font-size: 16px;
+    width: 90%;
+    margin: 25px 5% 2px;
+    background-color: inherit;
+    padding: 5px;
+    outline: none;
+    border: 2px solid gray;
+    border-radius: 5px;
+    color: blue;
+    cursor: pointer;
+}
+
+
+.d1 button{
+    font-size: 16px;
+    width: 90%;
+    margin: 10px 5%;
+    background-color: blue;
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+
+.d1 .see-text{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: whitesmoke;
+    display: none;
+}
+
+
+.d1 .see-text .text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 400px;
+    margin: 0 auto;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    color: gray;
+}
+
+
+.d1 .text em{
+    color: red;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+
+.d1 .text span{
+    color: blue;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+
+.d1 .text button{
+    padding: 10px;
+    background-color: inherit;
+    border: none;
+    outline: none;
+    margin: 20px;
+    font-weight: bold;
+    color: red;
+    border-bottom: 3px solid red;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+
+
+
+/* Partie Formualaire fiftif */
+
+.container-pay-payBases .d2{
+    margin: 40px;
+    width: 80%;
+    display: none;
+    padding: 20px;
+    border: 2px solid rgba(128, 128, 128, 0.486);
+    border-radius: 5px;
+}
+
+
+/* Design de la selection 1 */
+
+
+.d2 .selection1{
+    margin: 20px ;
+    box-shadow: 2px 2px 10px gray;
+    width: 100%;
+    margin: auto;
+    padding: 10px;
+    border-radius: 5px;
+    display: block;
+}
+
+
+.d2 .selection1 h2{
+    text-align: center;
+    font-family: "New Amsterdam", sans-serif;
+}
+
+
+.d2 .selection1 h2 span{
+    color: red;
+}
+
+
+.d2 .selection1 p{
+    text-align: justify;
+    font-family: "Moderustic", sans-serif;
+    margin: 15px;
+}
+
+
+.d2 .selection1 p span{
+    font-weight: bold;
+}
+
+
+.d2 .selection1 .v1{
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 6px;
+    text-align: center;
+    background-color: orangered;
+    width: 130px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    border: 2px solid white;
+    transition: 0.3s;
+}
+
+
+.d2 .selection1 .v1:active{
+    background-color: inherit;
+    border: 2px solid orangered;
+    color: orangered;
+}
+
+
+/* Design de la section 2 */
+
+
+.d2 .selection2{
+    margin: 20px ;
+    box-shadow: 2px 2px 10px gray;
+    width: 100%;
+    margin: auto;
+    padding: 10px;
+    border-radius: 5px;
+    display: none;
+}
+
+
+.selection2 .diva{
+    width: 90%;
+    margin: 10px auto;
+}
+
+
+.selection2 .diva span{
+    font-weight: bold;
+    display: block;
+    margin: 0 10px;
+}
+
+
+.selection2 .diva input{
+    border: none;
+    outline: none;
+    width: 100%;
+    border-bottom: 2px solid gray;
+    padding: 5px;
+    margin: 10px;
+    background-color: inherit;
+}
+
+
+.selection2 .diva input:focus{
+    border-bottom: 2px solid orangered;
+}
+
+
+.selection2 .level p{
+    border: none;
+    outline: none;
+    width: 100%;
+    border-bottom: 2px solid gray;
+    padding: 5px;
+    margin: 10px;
+    background-color: inherit;
+    font-weight: bold;
+    color: gray;
+}
+
+
+.selection2 .montant p{
+    border: none;
+    outline: none;
+    width: 100%;
+    border-bottom: 2px solid gray;
+    padding: 5px;
+    margin: 10px;
+    background-color: inherit;
+    font-weight: bold;
+    color: gray;
+}
+
+
+/* Design du lien et du Button */
+
+
+.samarche{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+}
+
+
+.samarche p{
+    width: 120px;
+    border-radius: 10px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    background-color: red;
+    color: white;
+    border: none;
+    outline: none;
+    border: 2px solid white;
+    transition: 0.3s;
+}
+
+
+.samarche p:hover{
+    opacity: 0.5;
+}
+
+
+.samarche p a{
+    color: white;
+}
+
+
+.samarche button{
+    padding: 14px 0;
+    background-color: rgb(37, 37, 167);
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 70%;
+    border: 2px solid white;
+}
+
+
+/* Design de la selection 3 */
+
+
+.d2 .selection3{
+    margin: 20px ;
+    box-shadow: 2px 2px 10px gray;
+    width: 100%;
+    margin: auto;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: "Ubuntu", sans-serif;
+    display: none;
+}
+
+
+.selection3 h2{
+    color: black;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+.selection3 .choose{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+}
+
+
+.selection3 .choose button{
+    padding: 10px 15px;
+    margin: 15px 10px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+.selection3 .choose button:nth-child(1){
+    background-color: red;
+}
+
+
+.selection3 .choose button:nth-child(1) a{
+    color: white;
+}
+
+
+.selection3 .choose button:nth-child(2){
+    background-color: green;
+    color: white;
+}
+
+
+/* Button de payement */
+
+
+.selection4{
+    display: none;
+}
+
+
+.selection4 .opp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.selection4 button{
+    padding: 10px 20px;
+    background: linear-gradient(to right, green, greenyellow);
+    font-size: 18px;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.8s;
+}
+
+
+
+
+/* Point de Validation Si le payement a été ou non Aprouvée */
+
+
+.PayementValidator{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(4, 13, 21);
+    display: none;
+}
+
+
+.PayementValidator .flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100Vh;
+}
+
+
+.PayementValidator .drop{
+    width: auto;
+    padding: 20px 40px;
+    margin: 10px 20px;
+    display: flex;
+    flex-wrap: wrap;    
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: rgba(128, 128, 128, 0.05);
+    border-radius: 10px;
+}
+
+
+.PayementValidator .drop .block{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.PayementValidator .drop h2{
+    width: 300px;
+    text-align: center;
+}
+
+
+/* Confirmez votre Compte */
+
+
+.PayementValidator .PayementApproved i{
+    font-size: 50px;
+    color: rgb(28, 240, 28);
+    box-shadow: inset 3px 0 20px rgb(28, 240, 28),
+    10px 0 50px rgb(28, 240, 28),
+    -10px 0 50px rgb(28, 240, 28);
+}
+
+
+.PayementValidator .PayementApproved h2{
+    color: white;
+}
+
+
+.PayementValidator .PayementApproved a{
+    color: white;
+    background-color: rgb(28, 240, 28);
+    border-radius: 5px;
+    padding: 5px 20px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+
+.PayementValidator .PayementApproved a:hover{
+    background-color: rgb(17, 101, 17);
+}
+
+
+/* Relancer le paiement */
+
+
+.PayementValidator .TransactionReplay i{
+    font-size: 50px;
+    color: royalblue;
+    box-shadow: inset 3px 0 20px royalblue,
+    10px 0 50px royalblue,
+    -10px 0 50px royalblue;
+}
+
+
+.PayementValidator .TransactionReplay h2{
+    color: white;
+}
+
+
+.PayementValidator .TransactionReplay a{
+    color: white;
+    background-color: royalblue;
+    border-radius: 5px;
+    padding: 5px 20px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+
+.PayementValidator .TransactionReplay a:hover{
+    background-color: rgb(31, 50, 104);
+}
+
+
+/* Tout Annuler */
+
+
+.PayementValidator .PayementUnApproved i{
+    font-size: 50px;
+    color: red;
+    box-shadow: inset 3px 0 20px red,
+    10px 0 50px red,
+    -10px 0 50px red;
+}
+
+
+.PayementValidator .PayementUnApproved h2{
+    color: white;
+}
+
+
+.PayementValidator .PayementUnApproved a{
+    color: white;
+    background-color: red;
+    border-radius: 5px;
+    padding: 5px 20px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+
+.PayementValidator .PayementUnApproved a:hover{
+    background-color: rgb(123, 29, 29);
+}
+
+
+/* Les Medias Queries */
+
+
+@media screen and (max-width: 800px){
+
+    .container-pay-payBases .d1{
+        width: 50%;
+    }
+}
+
+
+@media screen and (max-width: 600px){
+
+    .container-pay-payBases .d1{
+        width: 80%;
+    }
+}

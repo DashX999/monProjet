@@ -1,0 +1,339 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
+/* font-family: "Acme", sans-serif; */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+body{
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+/* Design de Notice */
+
+
+.notice{
+    background: white;
+    padding: 50px;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    text-align: center;
+    width: 60%;
+    height: auto;
+    margin: 10px 20%;
+    display: block;
+}
+
+
+.notice h2{
+    text-align: center;
+    margin: 10px 0;
+    padding: 10px;
+    color: orange;
+    font-size: 2rem;
+}
+
+
+.notice p{
+    color: gray;
+    margin: 10px 0;
+}
+
+
+.notice .letsgo{
+    padding: 10px 25px;
+    margin: 10px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    border-bottom: 3px solid gold;
+    font-family: "Acme", sans-serif;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+
+.notice .letsgo:active{
+    border-bottom: white;
+    color: gold;
+}
+
+
+/* Bouton Close */
+
+
+.close .close-parent{
+    margin: 40px 10px;
+}
+
+
+.close{
+    padding: 10px 25px;
+    background-color: inherit;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: 0.6s;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+
+
+.close:focus{
+    background-color: inherit;
+    color: red;
+}
+
+
+/* Tache */
+
+
+.listen{
+    margin: 20px;
+}
+
+
+.listen p{
+    color: gray;
+    font-size: 22px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+
+/* Design du Bouton back */
+
+
+.choix .opp{
+    padding: 10px 25px;
+    background-color: inherit;
+    margin: 20px 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: 0.6s;
+    background-color: red;
+    color: white;
+}
+
+
+.choix .opp:focus{
+    background-color: inherit;
+    color: red;
+}
+
+
+
+/* Contenue de L'exercice 1 */
+
+
+.content-exercice1{
+    width: 90%;
+    height: auto;
+    margin: 20px 5%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+
+/* ###   ###   ###   ###   ### */
+
+
+.content-exercice1 .block{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+
+.content-exercice1 .block .box{
+    width: 50px;
+    font-weight: bold;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: white;
+    border-bottom: 3px solid blue;
+}
+
+
+/* Design Bouton Choix */
+
+
+.content-exercice1 .choix{
+    width: auto;
+    height: auto;
+    padding: 20px;
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* Contenue de L'exercice 2 */
+
+
+.content-exercice2{
+    width: 90%;
+    height: auto;
+    margin: 20px 5%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+
+/* ###   ###   ###   ###   ### */
+
+
+.content-exercice2 .block{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+
+.content-exercice2 .block .box{
+    width: 50px;
+    font-weight: bold;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: white;
+    border-bottom: 3px solid blue;
+}
+
+
+/* Design Bouton Choix */
+
+
+.content-exercice2 .choix{
+    width: auto;
+    height: auto;
+    padding: 20px;
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+/* Contenue de L'exercice 2 */
+
+
+.content-exercice3{
+    width: 90%;
+    height: auto;
+    margin: 20px 5%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+
+/* ###   ###   ###   ###   ### */
+
+
+.content-exercice3 .block{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+
+.content-exercice3 .block .box{
+    width: 50px;
+    font-weight: bold;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: white;
+    border-bottom: 3px solid blue;
+}
+
+
+/* Design Bouton Choix */
+
+
+.content-exercice3 .choix{
+    width: auto;
+    height: auto;
+    padding: 20px;
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+/* Les Médias Screen */
+
+
+@media screen and (max-width:640px) {
+
+    .notice{
+        width: 80%;
+        padding: 20px;
+        margin: 10px 10%;
+    }
+    
+    
+    .notice button{
+        width: 55%;
+    }
+
+    .notice .close-parent{
+        margin-top: 20px;
+    }
+}

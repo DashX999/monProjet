@@ -1,0 +1,399 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
+/* font-family: "Acme", sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Grey+Qo&display=swap');
+
+/* font-family: "Grey Qo", cursive; */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+body{
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+/* Les Boutons */
+
+
+.content-btn{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: auto;
+    margin: 20px 5%;
+    padding: 10px;
+    gap: 10px;
+}
+
+
+.content-btn h1{
+    color: red;
+    margin: 10px;
+    text-align: center;
+}
+
+
+.content-btn .box-btn{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-btn .btn:active{
+    color: gold;
+}
+
+.content-btn .btn{
+    width: 160px;
+    height: 60px;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    font-family: "Grey Qo", cursive; 
+    font-size: 30px;
+    color: violet;
+    margin: 5px 10px;
+    border: none;
+    outline: none;
+    background-color: inherit;
+    border-bottom: 3px solid violet;
+    border-radius: 20px;
+}
+
+
+
+/* Bouton Back */
+
+
+.close-parent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+
+.Back{
+    padding: 10px 35px;
+    background-color: inherit;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: 0.6s;
+    border-bottom: 3px solid red;
+    color: red;
+    cursor: pointer;
+}
+
+
+.Back:active{
+    color: gold;
+}
+
+
+
+/* Container des Test */
+
+
+.content-practical{
+    font-family: "Acme", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Format des Test */
+
+
+.content-practical .practical{
+    display: block;
+}
+
+
+.practical h3{
+    color: gray;
+    margin: 15px;
+    font-size: 25px;
+    border: 20px solid gold;
+    padding: 20px;
+    display: none;
+    text-align: center;
+}
+
+
+.practical .content-test{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.content-test .test{
+    display: block;
+}
+
+
+.content-test .reference{
+    width: 150px;
+    height: auto;
+    display: block;
+    border-radius: 50%;
+    margin: 20px auto;
+    box-shadow: 2px 2px 10px rgba(128, 128, 128, 0.285),
+    -2px -2px 10px rgba(128, 128, 128, 0.285);
+    cursor: pointer;
+}
+
+
+.content-test .reference:active{
+    box-shadow: inset 2px 2px 10px rgba(128, 128, 128, 0.285),
+    inset -2px -2px 10px rgba(128, 128, 128, 0.285);
+}
+
+
+.content-test .reference i{
+    width: 90%;
+    margin: 10px 5%;
+    font-size: 80px;
+    padding: 20px;
+    border-radius: 50%;
+    color: gray;
+}
+
+
+.content-test .reference audio{
+    display: none;
+}
+
+
+.content-test .choose{
+    width: 300px;
+    margin: 20px;
+    padding: 10px;
+}
+
+
+.content-test .choose p{
+    width: 100%;
+    margin: 10px auto;
+    font-size: 20px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 30px;
+    text-align: center;
+    box-shadow: 2px 2px 10px rgba(128, 128, 128, 0.285),
+    -2px -2px 10px rgba(128, 128, 128, 0.285);
+    cursor: pointer;
+}
+
+
+.content-test .next{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.content-test .next button{
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    padding: 10px 25px;
+    border-bottom: 3px solid gold;
+    margin: -15px auto 20px;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+.content-test .next button:active{
+    background-color: gold;
+    color: white;
+    border-bottom: 3px solid gold;
+}
+
+
+
+
+/* test 1 */
+
+.content-test .test1{
+    display: none;
+}
+
+/* test 2 */
+
+.content-test .test2{
+    display: none;
+}
+
+/* test 3 */
+
+.content-test .test3{
+    display: none;
+}
+
+/* test 4 */
+
+.content-test .test4{
+    display: none;
+}
+
+/* test 5 */
+
+.content-test .test5{
+    display: none;
+}
+
+/* test 6 */
+
+.content-test .test6{
+    display: none;
+}
+
+/* test 7 */
+
+.content-test .test7{
+    display: none;
+}
+
+/* test 8 */
+
+.content-test .test8{
+    display: none;
+}
+
+/* test 9 */
+
+.content-test .test9{
+    display: none;
+}
+
+/* test 10 */
+
+.content-test .test10{
+    display: none;
+}
+
+
+/* test 11 */
+
+.content-test .test11{
+    display: none;
+}
+
+/* test 12 */
+
+.content-test .test12{
+    display: none;
+}
+
+/* test 13 */
+
+.content-test .test13{
+    display: none;
+}
+
+/* test 14 */
+
+.content-test .test14{
+    display: none;
+}
+
+/* test 15 */
+
+.content-test .test15{
+    display: none;
+}
+
+/* test 16 */
+
+.content-test .test16{
+    display: none;
+}
+
+/* test 17 */
+
+.content-test .test17{
+    display: none;
+}
+
+/* test 18 */
+
+.content-test .test18{
+    display: none;
+}
+
+/* test 19 */
+
+.content-test .test19{
+    display: none;
+}
+
+/* test 20 */
+
+.content-test .test20{
+    display: none;
+}
+
+
+.content-test .test .vrai:active{
+    background-color: rgb(88, 203, 88);
+}
+
+
+.content-test .test .faux:active{
+    background-color: rgb(227, 61, 61);
+}
+
+
+/* Bouton Back */
+
+
+.close-parent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+
+.Back{
+    padding: 10px 35px;
+    background-color: inherit;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: 0.6s;
+    border-bottom: 3px solid red;
+    color: red;
+    cursor: pointer;
+}
+
+
+.Back:active{
+    color: gold;
+}

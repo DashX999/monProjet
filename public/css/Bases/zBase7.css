@@ -1,0 +1,240 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
+/* font-family: "Acme", sans-serif; */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+body{
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+/* Chapitre */
+
+
+.chapitre{
+    background: white;
+    padding: 50px;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    text-align: center;
+    width: 60%;
+    height: auto;
+    margin: 10px 20%;
+    display: block;
+}
+
+
+.chapitre h2{
+    text-align: center;
+    margin: 10px 0;
+    padding: 10px;
+    color: orange;
+    font-size: 2rem;
+}
+
+
+.chapitre .option{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.chapitre .option button{
+    padding: 10px 25px;
+    margin: 10px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    border-bottom: 3px solid gold;
+    font-family: "Acme", sans-serif;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+
+.chapitre .option button:active{
+    border-bottom: white;
+    color: gold;
+}
+
+
+
+
+/* Bouton Close */
+
+
+.close-parent{
+    margin: 40px 10px;
+}
+
+
+.close{
+    padding: 10px 25px;
+    background-color: inherit;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: 0.6s;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+
+
+.close:focus{
+    background-color: inherit;
+    color: red;
+}
+
+
+
+
+/* Design des différents textes */
+
+
+.text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 25px 10%;
+    height: 100vh;
+}
+
+
+.text h3{
+    text-align: center;
+    font-size: 25px;
+    color: gray;
+}
+
+
+.text p{
+    background-color: white;
+    box-shadow: 10px 10px 10px rgba(128, 128, 128, 0.342),
+    -10px -10px 10px rgba(128, 128, 128, 0.342);
+    padding: 20px;
+    width: 80%;
+    height: auto;
+    margin: 30px 10% 10px;
+    border-radius: 20px;
+    color: gray;
+    font-size: 25px;
+    text-align: justify;
+}
+
+
+.text .touch{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+
+.text .touch .touch-bar{
+    padding: 10px 25px;
+    border-radius: 20px;
+    font-weight: bold;
+    margin: 15px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+
+.text .touch .play{
+    background-color: blue;
+    color: white;
+}
+
+
+.text .touch .stop{
+    background-color: rgba(128, 128, 128, 0.498);
+    color: red;
+}
+
+
+.text audio{
+    display: none;
+}
+
+
+.text .opp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Texte 1 */
+
+
+.txt1{
+    display: none;
+}
+
+
+/* Texte 2 */
+
+
+.txt2{
+    display: none;
+}
+
+
+/* Texte 3 */
+
+.txt3{
+    display: none;
+}
+
+
+
+
+/* Les Médias Queries */
+
+
+@media screen and (max-width:640px) {
+
+    .chapitre{
+        width: 80%;
+    }
+
+    .chapitre .option{
+        margin: 0 5%;
+        width: 90%;
+        padding: 20px;
+    }
+    
+    
+    .chapitre .option button{
+        width: 90%;
+    }
+
+    .chapitre .option .close-parent{
+        margin-top: 20px;
+    }
+}

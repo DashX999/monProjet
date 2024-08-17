@@ -1,0 +1,248 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
+/* font-family: "Acme", sans-serif; */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+body{
+    background-color: whitesmoke;
+}
+
+
+/* Contenue Cours */
+
+
+.content-cours{
+    display: block;
+}
+
+
+h1{
+    margin: 20px;
+    font-family: "Acme", sans-serif;
+    text-align: center;
+}
+
+
+h1 span{
+    color: red;
+}
+
+
+/* Les voyelles Cours */
+
+
+.Course-Aphabet{
+    margin: 20px;
+}
+
+
+.Course-Aphabet video{
+    width: 90%;
+    height: auto;
+    margin: 10px 5%;
+}
+
+
+/* Creation du bouton GO Exercice */
+
+
+.box-more{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.more{
+    width: 200px;
+    padding: 15px 25px;
+    margin: 20px auto;
+    text-transform: uppercase;
+    border-radius: 15px;
+    background-color: greenyellow;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: "Acme", sans-serif;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+
+.more:active{
+    background-color: inherit;
+    color: greenyellow;
+}
+
+
+/* Les Lettres de L'alphabet */
+
+
+.Content-More{
+    display: none;
+}
+
+
+.Content-More .block{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 5%;
+    width: 90%;
+}
+
+
+.Content-More .block .box{
+    width: 120px;
+    text-align: center;
+    border: 2px solid rgb(48, 48, 99);
+    padding: 10px;
+    margin: 10px;
+}
+
+
+.Content-More .block .letter{
+    font-family: "Acme", sans-serif;
+    font-weight: bold;
+}
+
+
+.Content-More .block .prononciate{
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+.closeOpen{
+    display: block;
+}
+
+
+/* Creation du bouton GO Exercice */
+
+
+.diva1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.go-exercice{
+    width: 200px;
+    padding: 15px 25px;
+    margin: 20px auto;
+    text-transform: uppercase;
+    border-radius: 15px;
+    background-color: blue;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: "Acme", sans-serif;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+
+.go-exercice:active{
+    background-color: inherit;
+    color: blue;
+}
+
+
+/* Contenue Go Exercice */
+
+
+.content-go-exercice{
+    display: none;
+}
+
+
+.content-go-exercice h1{
+    text-transform: uppercase;
+    color: red;
+    margin: 20px;
+}
+
+
+.content-go-exercice p{
+    color: gray;
+    font-size: 25px;
+    text-align: center;
+    margin: 10px 20px;
+}
+
+
+.exo-Aphabet{
+    margin: 20px;
+}
+
+
+.exo-Aphabet video{
+    width: 90%;
+    height: auto;
+    margin: 10px 5%;
+}
+
+
+/* Creation des Boutons */
+
+
+.choix{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 20px;
+}
+
+
+.content-go-exercice .opp{
+    border-radius: 5px;
+    font-weight: bold;
+    width: 150px;
+    padding: 10px 25px;
+    margin: 15px;
+    background-color: inherit;
+    transition: 0.3s;
+    text-align: center;
+}
+
+
+
+.content-go-exercice .replay{
+    border: 3px solid red;
+    cursor: pointer;
+    
+}
+
+
+.content-go-exercice .replay:active{
+    background-color: red;
+    color: white;    
+}
+
+
+.content-go-exercice .close-day{
+    border: 3px solid blue;
+    cursor: pointer;
+}
+
+
+.content-go-exercice .close-day:active{
+    background-color: blue;
+    color: white;
+}

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pay-payBases</title>
+    <link rel="stylesheet" href="/css/pay-payBases.css">
+    <script src="https://cdn.fedapay.com/checkout.js?v=1.1.7"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="shortcut icon" href="/img/logo-top/fav.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <div class="container-pay-payBases">
+
+        <div class="d1">
+
+            <p class="accroche">
+                <span>English</span> <span>fans</span> est une communautée pour toutes personnes qui souhaiteraient
+                s'exprimer en Anglais et tout ça en <span>90 jours</span>.
+            </p>
+
+
+            <button class="voir-plus">voir plus</button>
+
+
+            <div class="see-text">
+
+                <p class="text">
+                    Beaucoup de personnes veulent s'exprimer en Anglais mais près de <em>99%</em>commence de la mauavise
+                    manière par manque d'information.Inquièt de celà, Nous avons Structurer un plan de
+                    <span>suivie</span>
+                    pour chaque personnes cherchant à faire de l'anglais sa deuxième langue.
+
+                    <button>fermer</button>
+
+                </p>
+
+            </div>
+
+
+            <button class="create">Creer mon Compte</button>
+
+        </div>
+
+
+        <div class="d2">
+
+
+            <div class="selection1">
+
+                <h2>Vous avez decidez de <span>franchir une Première barrière</span> , Ce qui est <span>plutôt
+                    Bien</span> !</h2>
+
+                <p>
+                    Maintenant; Nous allons devoir vous suivre tout au long de votre formation pour garantir notre
+                    promesse et tout celà en <span>90 jours</span>.
+
+                    Chaque jour vous allez nous donnez <span>25 min</span> de votre temps pour nous permettre à tout les
+                    deux d'attiendre nos objectifs.
+                </p>
+
+                <div class="v1">
+                    Je suis prêt
+                </div>
+
+            </div>
+
+
+            <div class="selection2">
+
+
+                <form action="">
+
+                    <div class="diva">
+                        <span>Entrer votre nom</span>
+                        <input type="text" placeholder="name" required>
+                    </div>
+
+
+                    <div class="diva">
+                        <span>Entrer votre email</span>
+                        <input type="email" placeholder="email" required>
+                    </div>
+
+
+                    <div class="diva">
+                        <span>Entrer votre Numéro</span>
+                        <input type="number" placeholder="number" required>
+                    </div>
+
+
+                    <div class="diva">
+                        <span>Entrer votre Mot de passe</span>
+                        <input type="password" placeholder="password" required>
+                    </div>
+
+                </form>
+
+
+                <div class="diva level">
+                    <span class="password">Section d'accès</span>
+                    <p>Bases</p>
+                </div>
+
+
+                <div class="diva montant">
+                    <span>Montant</span>
+                    <p>2000 FCFA</p>
+                </div>
+
+
+                <div class="samarche">
+                    <p><a href="/">Je repasserai</a></p>
+                    <button type="submit">Validé le Payement</button>
+                </div>
+
+            </div>
+
+
+            <div class="selection3">
+                <h2>Êtes vous sûr de vouloir continuer ?</h2>
+                <div class="choose">
+                    <button><a href="/">NON</a></button>
+                    <button class="lastClick">OUI</button>
+                </div>
+            </div>
+
+
+            <div class="selection4">
+
+
+                <div class="opp">
+                    <button id="pay-btn">Payer 2000 FCFA</button>
+                </div>
+
+                <script type="text/javascript">
+
+                    FedaPay.init('#pay-btn', {
+                        public_key: 'pk_live_Co_amf-Nmn_JO8Ec9WISw0QJ',
+                        transaction: {
+                            amount: 2000,
+                            description: 'Payement Bases'
+                        }
+                    });
+
+                </script>
+
+            </div>
+
+
+
+
+            <!-- Point de Validation Si le payement a été ou non Aprouvée -->
+
+
+            <div class="PayementValidator">
+
+
+                <div class="flex">
+
+
+                    <div class="drop PayementApproved">
+
+                        <i class='bx bx-check'></i>
+
+                        <div class="block">
+
+                            <h2>
+                                Confirmez votre Compte
+                            </h2>
+    
+                            <a href="https://t.me/+1cdmvFbXWV83Y2Vk">onclick</a>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="drop TransactionReplay">
+
+                        <i class='bx bx-repost'></i>
+
+                        <div class="block">
+
+                            <h2>
+                                Relancer le paiement
+                            </h2>
+    
+                            <a href="#" id="relance-pay">onclick</a>
+
+
+                            <script type="text/javascript">
+
+                                FedaPay.init('#relance-pay', {
+                                    public_key: 'pk_live_Co_amf-Nmn_JO8Ec9WISw0QJ',
+                                    transaction: {
+                                        amount: 2000,
+                                        description: 'Payement Bases'
+                                    }
+                                });
+            
+                            </script>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="drop PayementUnApproved">
+
+                        <i class='bx bx-x'></i>
+
+                        <div class="block">
+
+                            <h2>
+                                Quitter la page
+                            </h2>
+    
+                            <a href="/">onclick</a>
+
+                        </div>
+
+                        
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="/JS/pay-payBases.js"></script>
+
+</body>
+
+</html>

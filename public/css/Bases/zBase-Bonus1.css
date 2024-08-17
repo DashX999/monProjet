@@ -1,0 +1,270 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
+/* font-family: "Acme", sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Grey+Qo&display=swap');
+
+/* font-family: "Grey Qo", cursive; */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+body{
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+h1{
+    color: red;
+}
+
+
+/* Contenue texte */
+
+
+.content-texte{
+    font-family: "Acme", sans-serif;
+}
+
+
+/* practical 1 */
+
+
+.content-texte .practical{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 25px 10%;
+    height: auto;
+    text-align: justify;
+}
+
+
+.content-texte .practical h2{
+    font-family: "Grey Qo", cursive;
+    font-size: 40px;
+    text-align: center;
+    color: green;
+    margin: 15px;
+}
+
+
+.content-texte .practical h3{
+    text-align: center;
+    color: gray;
+    margin: 15px 10px;
+}
+
+
+.content-texte .practical p{
+    margin: 10px;
+}
+
+
+/* Panel de commande des audios */
+
+
+.practical .touch{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+
+.practical .touch .touch-bar{
+    padding: 10px 25px;
+    border-radius: 20px;
+    font-weight: bold;
+    margin: 15px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+
+.practical .touch .play{
+    background-color: blue;
+    color: white;
+}
+
+
+.practical .touch .stop{
+    background-color: rgba(128, 128, 128, 0.498);
+    color: red;
+}
+
+
+.practical audio{
+    display: none;
+}
+
+
+/* Bouton Close */
+
+
+.close .close-parent{
+    margin: 40px 10px;
+}
+
+
+.close{
+    padding: 10px 25px;
+    background-color: inherit;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: 0.6s;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+
+
+.close:focus{
+    background-color: inherit;
+    color: red;
+}
+
+
+.practical .opp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Cachez Les texte */
+
+
+.content-texte .practical1{
+    display: none;
+}
+
+
+.content-texte .practical2{
+    display: none;
+}
+
+.content-texte .practical3{
+    display: none;
+}
+
+.content-texte .practical4{
+    display: none;
+}
+
+.content-texte .practical5{
+    display: none;
+}
+
+.content-texte .practical6{
+    display: none;
+}
+
+.content-texte .practical7{
+    display: none;
+}
+
+.content-texte .practical8{
+    display: none;
+}
+
+.content-texte .practical9{
+    display: none;
+}
+
+.content-texte .practical10{
+    display: none;
+}
+
+
+/* Les Boutons */
+
+
+.content-btn{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: auto;
+    margin: 20px 5%;
+    padding: 10px;
+    gap: 10px;
+}
+
+
+.content-btn .box-btn{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-btn .btn:active{
+    color: gold;
+}
+
+.content-btn .btn{
+    width: 160px;
+    height: 60px;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    font-family: "Grey Qo", cursive; 
+    font-size: 30px;
+    color: violet;
+    margin: 5px 10px;
+    border: none;
+    outline: none;
+    background-color: inherit;
+    border-bottom: 3px solid violet;
+    border-radius: 20px;
+}
+
+
+
+/* Bouton Back */
+
+
+.close-parent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+
+.Back{
+    padding: 10px 35px;
+    background-color: inherit;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: 0.6s;
+    border-bottom: 3px solid red;
+    color: red;
+    cursor: pointer;
+}
+
+
+.Back:active{
+    color: gold;
+}
